@@ -1094,7 +1094,7 @@ function clearAllViews() {
 /* ─── FETCH GOOGLE SHEETS ─── */
 async function fetchSheetData() {
   const url = CONFIG.sheetExecUrl;
-  if (!url || url === 'GANTI_DENGAN_APPS_SCRIPT_EXEC_URL') return null;
+  if (!url || url === 'https://script.google.com/macros/s/AKfycbw6TiwzYuonD69Xbcpd6ezBjK5H0o2mQ7kTtwGVybnUGYZqbdTKNqaJewhDc5BpCp1t/exec') return null;
   try {
     const res = await fetch(url);
     if (!res.ok) return null;
