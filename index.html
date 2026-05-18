@@ -1026,7 +1026,7 @@
    KONFIGURASI
    ================================================================ */
 const CONFIG = {
-  sheetExecUrl: 'https://script.google.com/macros/s/AKfycbw6TiwzYuonD69Xbcpd6ezBjK5H0o2mQ7kTtwGVybnUGYZqbdTKNqaJewhDc5BpCp1t/exec',  // Ganti dengan Web App URL
+  sheetExecUrl: 'https://script.google.com/macros/s/AKfycbyeSnXQaHku4du67aiCA_OZsTPogq8F8dVcCqawwpBusOHoLL6RaauTbnH-iV7X0hXS/exec',  // Ganti dengan Web App URL
   formUrl: 'https://forms.gle/CUfNcnKt4uEocHZm9',           // Ganti dengan Google Form URL
   igUrl: 'https://instagram.com/zinecorner',
   tokped: 'https://tokopedia.com/zinecorner',
@@ -1094,7 +1094,7 @@ function clearAllViews() {
 /* ─── FETCH GOOGLE SHEETS ─── */
 async function fetchSheetData() {
   const url = CONFIG.sheetExecUrl;
-  if (!url || url === 'https://script.google.com/macros/s/AKfycbw6TiwzYuonD69Xbcpd6ezBjK5H0o2mQ7kTtwGVybnUGYZqbdTKNqaJewhDc5BpCp1t/exec') return null;
+  if (!url || url === 'https://script.google.com/macros/s/AKfycbyeSnXQaHku4du67aiCA_OZsTPogq8F8dVcCqawwpBusOHoLL6RaauTbnH-iV7X0hXS/exec') return null;
   try {
     const res = await fetch(url);
     if (!res.ok) return null;
@@ -1428,7 +1428,7 @@ function confirmResetAll() {
 
 function showConfigInfo() {
   alert(`📋 KONFIGURASI ZINE CORNER\n\n` +
-    `Sheet URL: ${CONFIG.sheetExecUrl === 'GANTI_DENGAN_APPS_SCRIPT_EXEC_URL' ? 'Belum diatur' : 'Sudah diatur'}\n` +
+    `Sheet URL: ${CONFIG.sheetExecUrl === 'https://script.google.com/macros/s/AKfycbyeSnXQaHku4du67aiCA_OZsTPogq8F8dVcCqawwpBusOHoLL6RaauTbnH-iV7X0hXS/exec' ? 'Belum diatur' : 'Sudah diatur'}\n` +
     `Form URL: ${CONFIG.formUrl === 'GANTI_DENGAN_GOOGLE_FORM_URL' ? 'Belum diatur' : 'Sudah diatur'}\n` +
     `Total Zine: ${allZines.length}\n\n` +
     `💡 Tips:\n` +
